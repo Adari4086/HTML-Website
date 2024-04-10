@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+  body{
+    width:100%;
+    height:100%;
+    padding:0px;
+    margin:0px;
+    overflow-x:hidden;  
+  }
+  .Header{
+    position:sticky;
+    top:0;
+    left:0;
+    z-index:1;
+    background:black;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:1rem 3rem;
+  }
+.Header .logo h4{
+  color: white;
+  font-weight:800;
+
+}
+.Header .menu a{
+  text-decoration: none;
+  font-weight:600;
+  margin-right:3rem;
+  color:white;
+
+}
+.menu a:hover{
+  color:aqua;
+}
+.menu .login{
+  border:1px solid aqua;
+  padding:0.5rem 1rem;
+  text-align: center;
+  border-radius: 0.5rem;;
+}
+.menu .login:hover{
+  color: black;
+  background-color: aqua;
+
+}
+
+.label{
+font-size:12px;
+position:relative;
+right:130px;
+margin-bottom:3px;
+}
+.input{
+padding:6px;
+padding-right:140px;
+margin-bottom:20px;
+border-radius: 8px;
+border:1px solid #d3d3d3;
+outline:none;
+
+}
+input[type=radio]{
+    height: 20px;
+    
+    width: 20px;
+	position:relative;
+	right:26px;
+	opacity:0.4;
+	transition:0.2s;
+}
+input[type=radio]:hover{
+opacity:2;
+}
+.but{
+align-items:center;
+border:1px solid #d3d3d3;
+border-radius: 8px;
+color: #272727;
+padding:13px 24px;
+width:320px;
+margin-bottom:20px;
+opacity:1;
+transition:0.2s;
+}
+.but:hover{
+opacity:0.5;
+}
+.icon{
+position:relative;
+right:30px;
+font-size:25px;
+}
+.move{
+position:relative;
+margin-top:30px;
+right:-150px;
+}
+.not{
+position:relative;
+margin-top:80px;
+left:-150px;
+}
+.btn{
+  margin-top:25px;
+  padding:15px 130px;
+  font-weight: 600;
+  background:rgb(32, 32, 241);
+  color:white;
+}
+.btn:hover{
+  color:white;
+}
+</style>
+</head>
+<body>
+  <div class="Header">
+    <div class="logo">
+     <h4>ARTFORM.</h4>
+    </div>
+    <div class="menu">
+  <a href="index.html">Home</li>
+  
+  <a href="#services" >Services</a>
+  <a href="#logs">Blogs</a>
+  <a href="#shop">Shop</a>
+  
+  <a href="#touch">Contact</a>
+  
+  </div>
+  </div>
+<center>
+<div class="room" style="margin-top:50px">
+<div class="login row">
+<h1>Login to Artist</h1>
+<p>Don't have an account?<a href="#" style="text-decoration:none">Sign Up</a></p>
+</div>
+</center>
+<center>
+<form>
+<div class="row"> 
+<div class="move col-sm-5">
+<label class="label">Email</label><br>
+<input type="text" placeholder="name@example.com" class="input"/><br>
+<label class="label">Password</label><br>
+<input type="text" placeholder="Password" class="input"/><br>
+<input type="radio" value="sumbit" ></input>
+<label for="remember" style="position:relative;bottom:4px;right:16px">Remember Me</label>
+<a href="#" style="position:relative;bottom:4px;left:20px;text-decoration:none;cursor:pointer">Forgot Password?</a><br>
+<a href="index.html" class="btn">Log In</a>
+</div>
+</form>
+<div class="col-sm-2" style="border-center:groove"><font style="position:relative;top:170px">OR</font></div>
+<div class="not col-sm-5">
+<form>
+<div class="google">
+<button type="submit" class="but"><a href=""></a>
+<span><i class="icon fa-brands fa-google"></i></span>
+<span>Continue with Google</span>
+</button>
+</div>
+<div class="apple">
+<button type="submit" class="but"><a href=""></a>
+<span><i class="icon fa-brands fa-apple"></i></span>
+<span>Continue with Apple</span>
+</button>
+</div>
+<div class="facebook">
+<button type="submit" class="but"><a href=""></a>
+<span><i class="icon fa-brands fa-facebook" style="position:relative;right:15px"></i></span>
+<span style="position:relative;left:10px">Continue with Facebook</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+<div class="footer">
+<p style="position:relative;left:60px;margin-top:40px;font-size:15px">By logging in, you agree to our <a href="" style="text-decoration:none">Terms of Use</a> and <a href="" style="text-decoration:none">Privacy Policy</a> and to<br> receive emails & updates from Pixpa.</p>
+</div>
+</div>
+</center>
+</body>
+</html>
